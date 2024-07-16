@@ -159,6 +159,52 @@ body{
 }
 
 /* Choose Your Destination style */
+.destination-title{
+    text-align: center;
+    margin-bottom: 24px;
+}
+.destination-description{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.destination-container-section img{
+    width: 100%;
+    height: 300px;
+    filter: brightness(70%);
+
+}
+.row-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 24px 0;
+}
+.row-2{
+    display: grid;
+    grid-template-columns: 374px 474px repeat(1, 1fr);
+    gap: 24px;
+    margin: 24px 0;
+}
+.row-3{
+    display: grid;
+    grid-template-columns:474px repeat(1, 1fr);
+    gap: 24px;
+    margin: 24px 0;
+}
+.country-card{
+    position: relative;
+    
+}
+.country-name{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    
+}
 
 
 
@@ -170,10 +216,7 @@ body{
 
 
 
-
-
-
-
+/* Responsive Media Query */
 @media screen and (max-width: 576px) {
    .navbar, 
    .nav-items,
@@ -183,7 +226,8 @@ body{
    }
 
    .header,
-   .popular-container-section{
+   .popular-container-section,
+   .destination-container-section{
     padding: 0 20px;
    }
 
@@ -205,10 +249,13 @@ body{
         font-size: 1rem;
     }
     .banner-explore-title,
-    .popular-text-title{
+    .popular-text-title,
+    .destination-title, 
+    .country-name{
         font-size: 1.375rem;
     }
-    .banner-explore-description{
+    .banner-explore-description, 
+    .destination-description{
         font-size: 0.875rem;
     }
     .popular-text-container{
@@ -218,7 +265,15 @@ body{
         margin: 24px 0;
         gap: 24px;
     }
-    
+    .row-1, .row-2, .row-3{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .destination-description{
+        margin-bottom: 20px;
+
+    }
 
 
 

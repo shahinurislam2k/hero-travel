@@ -11,7 +11,8 @@ body{
 }
 /* max-width */
 
-.header{
+.header, 
+.main{
     max-width: 1170px;
     margin: 0 auto;
     
@@ -140,6 +141,25 @@ body{
 
 }
 
+/* Our Popular Tours style */
+.popular-container-section{
+    margin-top: 90px;
+    margin-bottom: 100px;
+    gap: 53px;
+}
+.popular-text-container{
+    width: 50%;
+    flex-direction: column;
+    gap: 24px;
+    text-align: justify;
+
+}
+.popular-images-container img{
+    width: 100%;
+}
+
+/* Choose Your Destination style */
+
 
 
 
@@ -157,11 +177,13 @@ body{
 @media screen and (max-width: 576px) {
    .navbar, 
    .nav-items,
-   .banner-explore-btn{
+   .banner-explore-btn,
+   .popular-container-section{
     flex-direction: column;
    }
 
-   .header{
+   .header,
+   .popular-container-section{
     padding: 0 20px;
    }
 
@@ -178,13 +200,43 @@ body{
         padding: 50px;
 
     }
-    .banner-explore-title{
+    .input-btn, 
+    .section-btn{
+        font-size: 1rem;
+    }
+    .banner-explore-title,
+    .popular-text-title{
         font-size: 1.375rem;
     }
     .banner-explore-description{
         font-size: 0.875rem;
     }
+    .popular-text-container{
+        width: 100%;
+    }
+    .popular-container-section{
+        margin: 24px 0;
+        gap: 24px;
+    }
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width:576px) and (max-width: 992px){
     .banner{

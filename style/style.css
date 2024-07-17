@@ -61,7 +61,8 @@ body{
 }
 .popular-container-section,
 .choose-section-container,
-.choose-container-section{
+.choose-container-section,
+.discount-container-section{
     margin-top: 90px;
     margin-bottom: 100px;
     gap: 53px;
@@ -259,6 +260,120 @@ body{
     color: #131318;
 }
 
+/* Deals & Discounts */
+.discount-container-section{
+    
+}
+.discount-cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.discount-text-title{
+    text-align: center;
+    margin-bottom: 24px;
+
+}
+.discount-text-description{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.discount-card-parent-1,
+.discount-card-parent-2,
+.discount-card-parent-3{
+    position: relative;
+
+}
+.discount-bg-images img{
+    width: 100%;
+    height: 500px;
+
+}
+.discount-card-1,
+.discount-card-3{
+    position:absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap:24px ;
+    width: 579px;
+    border-radius: 16px;
+    padding: 50px 70px 50px 50px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.8);
+
+}
+.discount-card-2{
+    position:absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap:24px ;
+    width: 579px;
+    border-radius: 16px;
+    padding: 50px 70px 50px 50px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.8);
+
+}
+.discount-card-icon{
+gap: 24PX;
+}
+.discount-card-icon i{
+    color: #FF5400;
+    font-size: 1rem;
+    margin-right:10px;
+}
+.discount-card-icon span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(90, 90, 93, 1);
+}
+.discount-card-title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #131318;
+
+}
+.discount-card-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #424247;
+
+
+}
+.discount-card-price{
+    font-size: 1.25rem;
+    font-size: 800;
+    color: #FF5400;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -277,7 +392,8 @@ body{
    .popular-container-section,
    .destination-container-section, 
    .popular-container-section,
-   .choose-container-section{
+   .choose-container-section,
+   .discount-container-section{
     padding: 0 20px;
    }
 
@@ -296,7 +412,8 @@ body{
     }
     .input-btn, 
     .section-btn,
-    .card-title{
+    .card-title,
+    .discount-card-price{
         font-size: 1rem;
     }
     .banner-explore-title,
@@ -304,14 +421,20 @@ body{
     .destination-title, 
     .country-name, 
     .choose-title,
-    .choose-text-title{
+    .choose-text-title,
+    .discount-text-title,
+    .discount-card-title{
         font-size: 1.375rem;
     }
     .banner-explore-description, 
     .destination-description, 
     .choose-description,
     .card-description,
-    .choose-text-description{
+    .choose-text-description,
+    .discount-text-description,
+    .discount-card-description,
+    .discount-card-icon span,
+    .discount-card-icon i{
         font-size: 0.875rem;
     }
     .popular-text-container, 
@@ -330,9 +453,46 @@ body{
         gap: 10px;
         margin: 10px 0;
     }
+    
 .choose-container-section img{
     max-width: 50px;
 }
+ .discount-card-1,
+ .discount-card-2,
+ .discount-card-3{
+    width: 80%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 50px 20px 20px;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
